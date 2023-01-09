@@ -26,6 +26,8 @@ namespace VillageRhapsody_Cheat
             cheats.Add(new string[] { "Replace Logging Animate", "RoleAniName.LOGGING", "RoleAniName.MOWING" });
             cheats.Add(new string[] { "Instant Mining", "t.hp-=i,", "t.hp-=i+100," });
             cheats.Add(new string[] { "Replace Mining Animate", "RoleAniName.KNOCKING", "RoleAniName.MOWING" });
+            cheats.Add(new string[] { "Increase Mining Drop", "i.push([r[0],r[1]])", "i.push([r[0],r[1]])&&i.push([r[0],r[1]])&&i.push([r[0],r[1]])" });
+            cheats.Add(new string[] { "Increase Mining Luck", ".randomInt(1,100)<", ".randomInt(1,5)<" });
 
             var files = Directory.GetFiles(".", "*.*", SearchOption.AllDirectories);
             Parallel.ForEach(files, (_) => Decrypt(_));
